@@ -14,7 +14,6 @@ if(!$reference){
 }
 
 curl_setopt_array($curl, array(
-   //CURLOPT_URL => "https://developer.flutterwave.com/reference#get-all-transactions",
   CURLOPT_URL => "https://api.flutterwave.com/v3/transactions/". rawurlencode($transaction_id)."/verify",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
@@ -25,7 +24,7 @@ curl_setopt_array($curl, array(
   CURLOPT_CUSTOMREQUEST => "GET",
   CURLOPT_HTTPHEADER => [
     "accept: application/json",
-    "authorization: Bearer FLWSECK_TEST-SANDBOXDEMOKEY-X",//Bearer KEYMUST BE HERE-X",
+    "authorization: Bearer FOLLOWEDTHEBEARERKEY",//Bearer KEYMUST BE HERE-X",
     "cache-control: no-cache"
   ],
 ));
@@ -177,7 +176,7 @@ try {
             padding: 0;
         }   
         .receipt-main td h2 {
-            font-size: 20px;
+            font-size: 20px;LWSECK_TEST-SANDBOXDEMOKEY
             font-weight: 900;
             margin: 0;
             text-transform: uppercase;
