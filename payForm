@@ -59,7 +59,7 @@ if(isset($_POST['pay_btn'])){
             'logo'=>'https:/linktoyourlogo/images/logo.png']
             ]),
           CURLOPT_HTTPHEADER => [
-            "authorization: Bearer B84E76ARER876KEYISALWAYS--HERE-X",
+            "authorization: Bearer FOLLOWEDBYTHEBEARERKEY",
             "content-type: application/json",
             "cache-control: no-cache"
           ]));
@@ -132,7 +132,7 @@ if(isset($_POST['pay_btn'])){
                 
                 ?>
                     <div class="card" style="background-color: rgba(4, 12, 37, 1); color:#fff;">
-                      <div class="card-header" style="text-align: center;"> Membership Subscription payment</div>
+                      <div class="card-header" style="text-align: center;"> Subscription payment</div>
                         <div class="card-body">
                             <form name="payment-form" id="paymentForm" method="POST" action="">
                                 <div class="form-group row">
